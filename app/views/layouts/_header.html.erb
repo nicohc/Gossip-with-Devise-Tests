@@ -1,0 +1,23 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Accueil", '/' %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Créer un gossip",  new_gossip_path %>
+          </li>
+          <li><%= link_to "Edition du compte",  edit_user_registration_path %>
+          </li>
+          <li><%= link_to "Se déconnecter" , destroy_user_session_path, method: :delete %>
+          </li>
+
+        <% else%>
+          <li><%= link_to "Se connecter" , new_user_session_path %>
+          </li>
+          <li><%= link_to "S'inscrire" , new_user_registration_path %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

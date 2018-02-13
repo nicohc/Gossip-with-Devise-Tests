@@ -1,0 +1,46 @@
+<p> Bonjour <%= if user_signed_in?
+  current_user.anonymous_username
+end %>
+</p>
+<p>Bienvenue sur le site des Gossips de THP version 2 !</p>
+
+
+<br>
+
+<%= if !(user_signed_in?)
+    link_to "Créer un compte", new_user_registration_path , class: "btn btn-lg btn-primary"
+end %>
+
+
+<% if user_signed_in? %>
+    <p> Voici les derniers gossips :</p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Date de création</th>
+        <th>L'auteur</th>
+        <th>Son gossip</th>
+        <th>Son gossip</th>
+      </tr>
+
+      <% @gossips.each do |gossip| %>
+      <tr>
+        <td><%= gossip.id %></td>
+        <td><%= gossip.created_at %></td>
+        <td><%= gossip.user.anonymous_username %></td>
+        <td><%= gossip.content %></td>
+        <td><%= link_to "Montrer le gossip", gossip_path(gossip) %></td>
+        <td><%= link_to "Editer", edit_gossip_path(gossip) %></td>
+        <td><%= link_to 'Detruire', gossip_path(gossip),
+                method: :delete,
+                data: { confirm: 'Etes vous sûr de votre acte irréversible ?' } %></td>
+
+      </tr>
+      <% end %>
+    </table>
+<br><br>
+<% end %>
+
+<br><br>
+<p> Retrouvez les codes sources pour recréer ce projet ici :</p>
+<p><a href="https://github.com/nicohc/">Lien github</a></p>
