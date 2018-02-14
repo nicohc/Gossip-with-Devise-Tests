@@ -1,25 +1,20 @@
-# README
+#Gossip-with-Devise-Tests
+README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Réalisations effectuées :
 
-Things you may want to cover:
 
-* Ruby version
+  *  Intégration de Devise pour la gestion des users
+  *  Accès restreint à l'inscription (nécessite un code secret)
+  *  Inscription disponible avec Connection , Accès à son espace personnel, Modification et Suppression
+  *  Accès à l'index des Gossips
+  *  Possibilité de créer des Gossips en son nom , les modifier et les supprimer : Fonction restreinte aux seuls contenus créés par l'utilisateur.
 
-* System dependencies
+Testing :
+  *  Plusieurs tests sur les models implémentés pour les tables Users et Gossips
+  *  D'autres tests présents et mis #sous forme de commentaires ne sont pas fonctionnels   
 
-* Configuration
+    ...
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Gossip-with-Devise-Tests
+Un projet visualisable ici : https://gossip-v2.herokuapp.com/
+Le code : THP
