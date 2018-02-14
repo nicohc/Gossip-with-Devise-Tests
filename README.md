@@ -12,3 +12,6 @@ Projet en cours de réalisation :
 
 Testing en cours de ... test :)
 * ...
+
+Un projet visualisable ici :
+https://gossip-v2.herokuapp.com/
