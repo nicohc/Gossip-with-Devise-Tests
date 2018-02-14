@@ -1,25 +1,14 @@
+# Gossip-with-Devise-Tests
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projet en cours de réalisation : 
 
-Things you may want to cover:
+* Intégration de Devise pour la gestion des users 
+* Inscription disponible avec Connection , Accès à son espace personnel, Modification et Suppression
+* Accès à l'index des Gossips 
+* Possibilité de créer des Gossips en son nom , les modifier et les supprimer : Fonction restreinte aux seuls contenus créés par l'utilisateur.
+* 
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+Testing en cours de ... test :)
 * ...
-# Gossip-with-Devise-Tests
